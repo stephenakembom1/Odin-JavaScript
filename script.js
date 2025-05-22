@@ -5,3 +5,14 @@ function getComputerChoice() {
 
 }
 console.log(getComputerChoice());
+
+function getHumanChoice() {
+    const choices = ['rock', 'paper', 'scissors'];
+    let choice;
+
+    do {
+        choice = prompt("Enter your choice (rock, paper, scissors):").toLowerCase();
+    } while (!choices.includes(choice));
+    return choice;
+}
+console.log(getHumanChoice());
